@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex; /* Enable Flexbox on the body */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; 
+    color: #fff;
+    font-weight: 100 !important;
+    font-size: 1.2rem;
+    background: linear-gradient(to bottom right, #ff3b3f, #8a4282, #4b2d7b); /* Gradient colors */
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 80%;
+    height: 80vh;
+    max-width: 1200px;
+    background: linear-gradient(to right, #a12892, #f0475a , #a44c19); /* Replace with the exact colors */   
+    padding: 1rem 2rem;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 5px;
+}
+
+.text-container{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+.text-container h1{
+    margin-bottom: 1.8rem;
+}
+.text-container p{
+    margin-bottom: 3.2rem;
+}
+.flex-item-2{
+    width: 450px;
+    position: relative;
+}
+.flex-item-2 img{
+    display: block;
+    position: absolute;
+    width: 500px;
+    bottom: 7.2rem;
+    left: 7.2rem;
+    transition: width 2s height 2s;
+}
+.flex-item-2:hover img{
+    transform: translate(-50%, -50%) scale(1.5); /* Center and zoom the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+}
