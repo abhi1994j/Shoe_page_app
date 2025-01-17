@@ -11,18 +11,18 @@ body{
     height: 100vh; /* Full viewport height */
     margin: 0; 
     color: #fff;
-    font-weight: 100 !important;
-    font-size: clamp(0.8rem 4.5vw 1.2rem);
+    font-weight: 100;
+    font-size: clamp(0.8rem, 4vw, 1.2rem); /* Responsive font size */
     background: linear-gradient(to bottom right, #ff3b3f, #8a4282, #4b2d7b); /* Gradient colors */
     background-repeat: no-repeat;
 }
 
 .container{
-    width: clamp(60%, 75rem, 80%);
-    height: 80vh;
+    width: clamp(60%, 75rem, 80%); /* Responsive container width */
+    height: clamp(60vh, 80vh, 85vh); /* Responsive container height */
     max-width: 1200px;
-    background: linear-gradient(to right, #a12892, #f0475a , #a44c19); /* Replace with the exact colors */   
-    padding: 1rem 2rem;
+    background: linear-gradient(to right, #a12892, #f0475a , #a44c19); /* Gradient colors */
+    padding: clamp(1rem, 2vw, 2rem); /* Responsive padding */
     display: flex;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     border-radius: 5px;
@@ -33,24 +33,29 @@ body{
     display: flex;
     flex-direction: column;
 }
+
 .text-container h1{
-    margin-bottom: 1.8rem;
+    margin-bottom: clamp(1rem, 2vw, 1.8rem); /* Responsive margin */
 }
+
 .text-container p{
-    margin-bottom: 3.2rem;
+    margin-bottom: clamp(1.5rem, 3vw, 3.2rem); /* Responsive margin */
 }
+
 .flex-item-2{
-    width: 450px;
+    width: clamp(250px, 40vw, 450px); /* Responsive width for the image container */
     position: relative;
 }
+
 .flex-item-2 img{
     display: block;
     position: absolute;
     max-width: 500px;
-    bottom: 7.2rem;
-    left: 7.2rem;
+    bottom: clamp(5rem, 10vw, 7.2rem); /* Responsive bottom positioning */
+    left: clamp(5rem, 10vw, 7.2rem); /* Responsive left positioning */
     transition: width 2s ;
 }
+
 .flex-item-2:hover img{
     transform: translate(-50%, -50%) scale(1.5); /* Center and zoom the image */
     top: 50%; /* Center vertically */
